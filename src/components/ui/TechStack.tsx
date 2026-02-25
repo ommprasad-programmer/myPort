@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import {
     Code2, FileCode2, Layout, Coffee, Terminal,
     Cpu, Zap, Database, ShieldCheck, Share2,
-    Key, LineChart, Globe, Lock
+    LineChart, Globe, Lock
 } from 'lucide-react';
 
 const technologies = [
