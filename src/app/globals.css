@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #121212;
+  --color-foreground: #ffffff;
+  --color-neon-cyan: #00FAFF;
+  --color-neon-violet: #BD00FF;
+  --color-deep-charcoal: #1A1A1A;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+:root {
+  --background: #121212;
+  --foreground: #ffffff;
+  --neon-cyan: #00FAFF;
+  --neon-violet: #BD00FF;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-inter), ui-sans-serif, system-ui;
+}
+
+/* Glassmorphism Utilities */
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-deep-charcoal/40 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+  
+  .animate-typing {
+    @apply border-r-2 border-neon-cyan overflow-hidden whitespace-nowrap;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-cyan rounded-full opacity-50;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neon-cyan opacity-100 shadow-[0_0_10px_#00FAFF];
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
