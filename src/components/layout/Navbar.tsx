@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Home, Briefcase, Layout, User, Mail } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -35,7 +36,14 @@ const Navbar = () => {
           }`}
       >
         <Link href="/" className="flex items-center gap-2 group">
-          <img src="/logo.svg" alt="OPN Logo" className="w-10 h-10 transition-transform group-hover:rotate-12" />
+          <div className="relative w-10 h-10 transition-transform group-hover:rotate-12">
+            <Image
+              src="/logo.svg"
+              alt="OPN Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           <span className="text-xl font-bold bg-gradient-to-r from-neon-cyan to-neon-violet bg-clip-text text-transparent">
             OPN
           </span>
