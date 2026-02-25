@@ -5,13 +5,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { X } from 'lucide-react';
 
+import fintech from '@/assets/images/fintech.jpg';
+import foodApp from '@/assets/images/food-app.png';
+import foodPost from '@/assets/images/food-post.png';
+import tereWeb from '@/assets/images/tere-web.jpg';
+import vision from '@/assets/images/vision.jpg';
+import collegeEvent from '@/assets/images/college-event.png';
+
 const designs = [
-    { id: 1, title: "Modern Yoga app Ui", image: "/4157008.jpg", span: "lg:col-span-2 row-span-2" },
-    { id: 2, title: "FoodConnector Dashboard", image: "/food.png", span: "col-span-1 row-span-1" },
-    { id: 3, title: "Food post Ui ", image: "/foodPost.png", span: "col-span-1 row-span-1" },
-    { id: 4, title: "Full web ui", image: "/tere-web.jpg", span: "lg:col-span-1 row-span-2" },
-    { id: 5, title: "my college instagram design", image: "/2025.jpg", span: "col-span-1 row-span-1" },
-    { id: 6, title: "College event poster design", image: "/AAM 2025-26.png", span: "col-span-1 row-span-1" },
+    { id: 1, title: "Modern Yoga app Ui", image: fintech, span: "lg:col-span-2 row-span-2" },
+    { id: 2, title: "FoodConnector Dashboard", image: foodApp, span: "col-span-1 row-span-1" },
+    { id: 3, title: "Food post Ui ", image: foodPost, span: "col-span-1 row-span-1" },
+    { id: 4, title: "Full web ui", image: tereWeb, span: "lg:col-span-1 row-span-2" },
+    { id: 5, title: "my college instagram design", image: vision, span: "col-span-1 row-span-1" },
+    { id: 6, title: "College event poster design", image: collegeEvent, span: "col-span-1 row-span-1" },
 ];
 
 const DesignGallery = () => {
