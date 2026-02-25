@@ -25,15 +25,17 @@ const AboutMe = () => {
                 products for people.
               </p>
               <p>
-                From mastering complex architectures in Java and React to
-                designing intuitive user interfaces, I thrive in environments
-                that challenge my technical and creative limits.
+                From learning Data Structures and Algorithms in Java to building
+                web projects with React, JavaScript, Node.js, and Express.js, I
+                am still growing every day improving my logic, refining my UI/UX
+                design skills, and working step by step toward becoming a strong
+                full-stack developer.
               </p>
               <p className="border-l-4 border-neon-cyan pl-6 italic">
-                Currently, I am deep-diving into the world of **AI
-                Integration**, exploring how Large Language Models can be
-                seamlessly woven into web applications to create smarter, more
-                autonomous user experiences.
+                Currently, I am deep-diving into the world of AI Integration,
+                exploring how Large Language Models can be seamlessly woven into
+                web applications to create smarter, more autonomous user
+                experiences.
               </p>
             </div>
           </motion.div>
