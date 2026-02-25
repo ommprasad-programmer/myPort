@@ -58,7 +58,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Let's Connect</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Let&apos;s Connect</h2>
                     <p className="text-white/60">Ready to bring your vision to life? Drop a message!</p>
                 </motion.div>
 

@@ -2,13 +2,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
+import { Github } from 'lucide-react';
 
 const projects = [
     {
         title: "Food Connector",
         description: "A platform bridging the gap between food donors and those in need. Real-time tracking and geo-spatial matching.",
-        image: "https://source.unsplash.com/featured/?food,technology",
+        image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1470&auto=format&fit=crop",
         github: "https://github.com/Omm-Prasad/FoodConnector",
         tags: ["React", "Node.js", "MongoDB", "Socket.io"],
         color: "from-orange-500/20 to-red-500/20"
@@ -16,7 +17,7 @@ const projects = [
     {
         title: "Song Listing Platform",
         description: "High-performance music streaming and listing platform with advanced filtering and seamless playback.",
-        image: "https://source.unsplash.com/featured/?music,digital",
+        image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop",
         github: "https://github.com/Omm-Prasad/SongListing",
         tags: ["Next.js", "TypeScript", "Tailwind", "Firebase"],
         color: "from-blue-500/20 to-purple-500/20"
@@ -24,7 +25,7 @@ const projects = [
     {
         title: "Complex Todo App",
         description: "Enterprise-grade task management system with workspace collaboration and deep integration features.",
-        image: "https://source.unsplash.com/featured/?productivity,office",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1472&auto=format&fit=crop",
         github: "https://github.com/Omm-Prasad/TodoApp",
         tags: ["React", "Express", "PostgreSQL", "JWT"],
         color: "from-green-500/20 to-cyan-500/20"
@@ -32,7 +33,7 @@ const projects = [
     {
         title: "Health Suggestion App",
         description: "AI-powered health companion providing personalized diet and workout plans based on biometric data.",
-        image: "https://source.unsplash.com/featured/?health,gym",
+        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop",
         github: "https://github.com/Omm-Prasad/HealthApp",
         tags: ["React Native", "Python", "ML Models", "FastAPI"],
         color: "from-pink-500/20 to-rose-500/20"
@@ -67,9 +68,10 @@ const Projects = () => {
                             className={`glass-card rounded-3xl overflow-hidden group border border-white/5 bg-gradient-to-br ${project.color}`}
                         >
                             <div className="relative h-64 overflow-hidden">
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
+                                    fill
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-60"
                                 />
                                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import {
     Code2, FileCode2, Layout, Coffee, Terminal,
     Cpu, Zap, Database, ShieldCheck, Share2,
-    Key, LineChart, Globe
+    Key, LineChart, Globe, Lock
 } from 'lucide-react';
 
 const technologies = [
@@ -24,14 +24,14 @@ const technologies = [
 const securityDb = [
     { name: 'SQL', icon: Database, color: 'text-blue-300' },
     { name: 'Mongoose', icon: Database, color: 'text-green-400' },
-    { name: 'JWT Auth', icon: LockIcon, color: 'text-purple-400' },
+    { name: 'JWT Auth', icon: Lock, color: 'text-purple-400' },
     { name: 'WebSockets', icon: Share2, color: 'text-yellow-500' },
     { name: 'Google Auth', icon: Globe, color: 'text-red-400' },
     { name: '2FA Security', icon: ShieldCheck, color: 'text-cyan-400' },
 ];
 
-function LockIcon(props: any) {
-    return <Key {...props} />;
+function LockIcon(props: React.ComponentProps<typeof Lock>) {
+    return <Lock {...props} />;
 }
 
 const TechStack = () => {
