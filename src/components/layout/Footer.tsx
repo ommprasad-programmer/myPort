@@ -15,8 +15,8 @@ const Footer = () => {
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-white/40 hover:text-neon-cyan transition-all hover:scale-110 active:scale-95"><Github size={24} /></a>
-                        <a href="#" className="text-white/40 hover:text-neon-violet transition-all hover:scale-110 active:scale-95"><Linkedin size={24} /></a>
+                        <a href="https://github.com/ommprasad-programmer" className="text-white/40 hover:text-neon-cyan transition-all hover:scale-110 active:scale-95"><Github size={24} /></a>
+                        <a href="www.linkedin.com/in/omm-prasad-nath" className="text-white/40 hover:text-neon-violet transition-all hover:scale-110 active:scale-95"><Linkedin size={24} /></a>
                         <a href="#" className="text-white/40 hover:text-neon-cyan transition-all hover:scale-110 active:scale-95"><Twitter size={24} /></a>
                     </div>
                 </div>
